@@ -1,0 +1,6 @@
+num_features: 2
+epochs: 200
+hidden_1: 32
+hidden_2: 16
+weight_decay: 0.0
+dropout: 0.0
