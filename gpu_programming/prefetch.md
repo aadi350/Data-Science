@@ -58,7 +58,6 @@ The following shows profile statistics using `nsys` of two kernel which do exact
 ### With prefetching
 
 ```
-
 CUDA Memory Operation Statistics (by time):
 
  Time (%)  Total Time (ns)  Count  Avg (ns)   Med (ns)   Min (ns)  Max (ns)  StdDev (ns)              Operation
@@ -75,7 +74,7 @@ CUDA Memory Operation Statistics (by size):
 ```
 
 ### Without prefetching
-```
+```bash
 CUDA Memory Operation Statistics (by time):
 
  Time (%)  Total Time (ns)  Count  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)              Operation
@@ -92,8 +91,6 @@ CUDA Memory Operation Statistics (by size):
     268.435  1,536     0.175     0.033     0.004     1.044        0.301  [CUDA Unified Memory memcpy HtoD]
     134.218    768     0.175     0.033     0.004     1.044        0.301  [CUDA Unified Memory memcpy DtoH]
 ```
-<!-- `void* malloc (size_t size);` allocates a block of `size` memory, returning a pointer to the beginning of this block. `cudaMalloc()` does the same for linear memory, typically copy from host to device using `cudaMemcpy()`.
- -->
 
 Of note are two things: the time taken for memory operations without prefetching is nearly triple that of the prefetch, and the size of memory operations is much smaller. The only difference between both kernels is a call to `cudaMemPrefetchAsync` for any data structure that was to be copied to device (GPU).
 
