@@ -20,4 +20,7 @@ We can get the difference between dates in the following ways:
 ((df.start_date - df.other_date)/np.timedelta64(1, 'M'))
 ```  
 
-### D
+### Difference in Multiple Units
+```python
+((df.start_date - df.other_date)/np.timedelta64(3, 'D'))
+```
