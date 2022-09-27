@@ -18,7 +18,6 @@ ps = pstats.Stats(pr)
 ps.strip_dirs()
 ps.sort_stats('cumulative')
 ps.print_stats(50)
-
 ```
 
 ## With Decorator
