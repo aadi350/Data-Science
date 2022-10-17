@@ -8,5 +8,5 @@ Collection of my musings in Data Science topics that interest me with links to c
 - [Pandas Multiprocessing](patterns/pandas-mp.py)
 - [Date differencing](patterns/date-diff.md)
 - [Random strings](patterns/random-string.md)
-- [Dash Plotly](tools/app.py)
 - [Profiling](patterns/profiling.md)
+- [Dash Plotly](tools/app.py)
