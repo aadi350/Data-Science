@@ -7,6 +7,7 @@ A `type` is the parent class of `class`, therefore any `class` is actually a sub
 a = int(8)
 a = 8
 type(a) # python knows to create an int without being explicit
+print(type(a))
 ```
 
 
