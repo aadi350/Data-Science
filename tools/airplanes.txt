@@ -1,0 +1,45 @@
+Manufacturer: Airbus
+Model: A350-900
+Range: 15000 km
+Role: Wide-Body Jet Airliner
+National Origin: Multinational
+First Flight: 2013-06-14 
+
+Manufacturer: Airbus
+Model: A350-1000
+Range: 16,100km
+Role: Wide-Body Jet Airliner
+National Origin: Multinational
+First Flight: 2013-06-14 
+
+MANUFACTURER: BOEING 
+MODEL: 777-300ER 
+RANGE: 13,600KM 
+ROLE: Wide-Body Jet Airliner
+NATIONAL ORIGIN: United States 
+FIRST FLIGHT: 1994-06-12 
+
+MANUFACTURER: BOEING 
+MODEL: 787-8 
+RANGE: 13,621KM 
+ROLE: Wide-Body Jet Airliner
+NATIONAL ORIGIN: United States 
+FIRST FLIGHT: 2009-12-15
+
+
+Ray
+Raydon
+
+
+# '<[1-6] *>'  matches ANY number of the spaces between [1-6]nad the closing >
+<H1>
+<H1 >
+<H3 >
+<H1>
+<H1>
+
+# <HR +SIZE *=14 *> 
+# the ' +' matches at LEAST one space, so 'HRSPACE' isn't matched
+# the ' *' matches any number of spaces including 0
+<HR SIZE=14>
+<HR>

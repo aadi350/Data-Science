@@ -1,9 +1,12 @@
 version: 1
 formatters:
+  # https://docs.python.org/3/library/logging.html#logrecord-attributes
+  # for a list of what can go here
   simple:
     format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
   detail:
-    format: "%(asctime)s - %(name)s - %(levelname)s - %(lineno)d - %(module)s - %(message)s"
+    format: "%(asctime)s - %(name)s - %(levelname)s - line# %(lineno)d - %(module)s - %(message)s"
+
 handlers:
   console:
     class: logging.StreamHandler
@@ -15,6 +18,6 @@ loggers:
     level: DEBUG
     handlers: [console]
     propagate: no
-root:
-  level: DEBUG
-  handlers: [console]
+  root:
+    level: DEBUG
+    handlers: [console]

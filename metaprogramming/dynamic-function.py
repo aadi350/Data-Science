@@ -1,16 +1,29 @@
-def functiongenerator(functionname, operator, a, b):
-    from types import FunctionType
-    functionstring = []
-    for i in operator:
-        functionstring.append('''
-def arithmetic(a, b):
-    op = __import__('operator')
-    result = '''+ i + '''(a, b)
-    return result
-        ''')
-        functiontemplate = []
-    for i in functionstring:
-        functiontemplate.append(compile(i, 'functionstring', 'exec'))
-        dynamicfunction = []
-    for i, j in zip(functiontemplate, functionname):
-        dynamicfunction.append(FunctionType(i.co_consts[0], globals(), j))
+from pandas import DataFrame, Series
+
+# add processing functions
+# funcs = [
+#   fix_date,
+#   mul_column
+# ]
+# etc
+inputs = {
+    "1": DataFrame({"id": [10] * 2}),
+    "2": DataFrame({"id": [10] * 2}),
+    "3": DataFrame({"id": [10] * 2}),
+    "4": DataFrame({"id": [10] * 2}),
+}
+
+outputs = inputs
+
+for i in inputs:
+    fixture_code = f"""
+import pytest
+    
+@pytest.fixture
+def input{i}():
+    return inputs[i]
+
+def test{i}(input{i}):
+    assert input{i}.equals(outputs[str({i})])
+    """
+    exec(fixture_code)
