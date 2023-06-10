@@ -42,4 +42,11 @@ Raydon
 # the ' +' matches at LEAST one space, so 'HRSPACE' isn't matched
 # the ' *' matches any number of spaces including 0
 <HR SIZE=14>
+<HRSIZE=14>
 <HR>
+
+# doubles
+the the
+the theory
+this this is doubled
+doubling in in the middle

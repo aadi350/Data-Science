@@ -1,9 +1,0 @@
-From: Me
-Subject: Something
-
-This is an email
-This is a text file;
-This is a text file;
-
-2000-12-01
-2000/12/01
