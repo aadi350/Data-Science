@@ -1,0 +1,3 @@
+|operationParameters |
+| --- |
+|{predicate -> ((((current_data.FlightDate = new_data.FlightDate) AND (new_data.Origin = current_data.Origin)) AND (current_data.Dest = new_data.Dest)) AND ((current_data.Reporting_Airline = new_data.Reporting_Airline) AND (current_data.Flight_Number_Reporting_Airline = new_data.Flight_Number_Reporting_Airline))), matchedPredicates -> [{"actionType":"update"}], notMatchedPredicates -> [{"actionType":"insert"}], notMatchedBySourcePredicates -> []}| 
