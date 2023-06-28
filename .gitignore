@@ -4,3 +4,6 @@ data/
 *.data
 *.data-numeric
 *.json
+*.parquet
+*.parquet.crc
+*.crc
